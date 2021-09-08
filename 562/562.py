@@ -6,17 +6,17 @@ def my_max(a,b):
 		return a
 	return b
 
-def knapsack(N, W):
+def knapsack(n, weight):
 	global allCoins,mat
 	i = 1 
-	while i <= N:
-		j = W
+	while i <= n:
+		j = weight
 		while j > 0:
 			if allCoins[i] <= j:
 				mat[j] = my_max(mat[j], allCoins[i] + mat[j - allCoins[i]])
 			j-=1
 		i+=1
-	return mat[W]
+	return mat[weight]
 
 
 def main():
