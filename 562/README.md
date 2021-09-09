@@ -27,3 +27,9 @@ o seguinte comando:
 ```
 python3 562.py
 ```
+
+caso deseje utilizar algum arquivo txt como input, execute o seguinte comando:
+```
+python3 562.py < input.txt
+```
+
