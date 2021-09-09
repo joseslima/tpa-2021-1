@@ -12,10 +12,7 @@
 Este diretório contém o código fonte gerado para solucionar o problema 10131
 do *Online Judge*. 
 
-Para resolver esse problema foi utilizada a estratégia de programação dinâmica, através da variavel global denonimada `cache`
-que faz o papel de aarmazenar na memória o resultaado dos calculos realizados na função `walk`para depois ser utilizada como parâmetro de 
-comparação na função `getBigger`.
-
+Para resolver esse problema foi utilizada a estratégia de programação dinâmica, através da variavel global denonimada `cache`, que é um dicionário, que faz o papel de armazenar na memória o resultaado dos calculos realizados na função `walk`para depois ser utilizada como parâmetro de comparação na função `getBigger`.
 
 O problema recebeu veredito “Accepted”, como mostrado na
 figura abaixo:

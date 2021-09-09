@@ -1,10 +1,11 @@
-cache = []
+cache = {}
 elems = []
 
 def walk(pos):
 	global cache,elems
 	id = elems[pos][2]
-	if (cache[id] != -1):
+
+	if (id in cache):
 		return cache[id]
 
 	size = 1
@@ -12,7 +13,7 @@ def walk(pos):
 		if elems[j][0] > elems[pos][0] and elems[j][1] < elems[pos][1]:
 			size = max(size, 1 + walk(j))
 	cache[id] = size	
-	return cache[id]
+	return size
 
 def getBigger(pos,bigger,n):
 	id = elems[pos][2]
@@ -42,7 +43,6 @@ def main():
 			n = len(elems)
 			if n == 0:
 				return 0
-			cache = [-1] * (n+1)
 			bigger = 0
 			for i in range(n):
 				size = walk(i)
