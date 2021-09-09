@@ -12,11 +12,6 @@
 Este diretório contém o código fonte gerado para solucionar o problema 12190
 do *Online Judge*. 
 
-para resolver esse problema foi utilizada a estratégiaa de algoritmo guloso nas iterações que são realizadas
-nos métodos `getTEnergy` e `cost`, e também a utilização do conceito de programação dinamica armazenando um 
-cache para evitar o recalculo em `getTEnergy`.
-
-
 O problema recebeu veredito “Accepted”, como mostrado na
 figura abaixo:
 
