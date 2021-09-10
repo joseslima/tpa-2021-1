@@ -57,7 +57,9 @@ def main():
 		end = tEnergy
 
 		aux = 1
-
+		
+		# TO DO
+		# IF I HAVE TIME TRY TO MAKE THIS CODE SNIPPET RECURSIVELY
 		while (start < end and aux):
 			m = (start + end) // 2
 			
@@ -75,6 +77,7 @@ def main():
 				else:
 					print(int(cost(m)))
 					aux = 0
+		#
 		newLine = input()
 	return 0
 	
