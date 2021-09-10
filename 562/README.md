@@ -13,8 +13,7 @@ Este diretório contém o código fonte gerado para solucionar o problema 00562
 do *Online Judge*. 
 
 Para resolver esse problema foi utilizada umaa estratégia baseada na solução do algorirtmo `knapsack` (mochila)
-que foi estudado em sala de aula, e utilizando algoritmo guloso, salvando sempre os resultados dos calculos de comparação
-entre maior e menor valor em memória.
+que foi estudado em sala de aula utilizando programação dinamica.
 
 
 O problema recebeu veredito “Accepted”, como mostrado na
