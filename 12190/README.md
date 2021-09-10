@@ -12,8 +12,8 @@
 Este diretório contém o código fonte gerado para solucionar o problema 12190
 do *Online Judge*. 
 
-O problema recebeu veredito “Accepted”, como mostrado na
-figura abaixo:
+Para resolver esse problema foi utilizada a técnica do algoritmo guloso. Partindo da ideia de dividir e conquistar,
+porém processando somente um dos lados da divisão, baseado no calculo da diferença que é realizado na função main().
 
 ![Veredito](./12190-veredito.png)
 
