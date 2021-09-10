@@ -12,8 +12,9 @@
 Este diretório contém o código fonte gerado para solucionar o problema 12190
 do *Online Judge*. 
 
-Para resolver esse problema foi utilizada a técnica do algoritmo guloso. Partindo da ideia de dividir e conquistar, onde é 
-realizada a divisão do subproblema em dois, e a partir dai é escolhido somente um caminho para seguir. Essa tecnica é implementada na função main.
+Para resolver esse problema foi utilizada a técnica do algoritmo guloso, partindo da ideia de dividir e conquistar, onde é 
+realizada a divisão do subproblema em dois e a partir dai é escolhido somente um caminho para seguir. Essa tecnica é implementada na função main. Também tentei utilizar programação dinamica para salvar em memória um cache dos calculos de
+consumo de energia por preço, mas não foi eficiente.
 
 ![Veredito](./12190-veredito.png)
 
