@@ -67,21 +67,21 @@ def main():
 		# TO DO
 		# IF I HAVE TIME TRY TO MAKE THIS CODE SNIPPET RECURSIVELY
 		while (start < end and aux):
-			m = (start + end) // 2
+			half = (start + end) // 2
 			
-			a = cost(tEnergy - m)
-			b = cost(m)
+			a = cost(tEnergy - half)
+			b = cost(half)
 			
 			diff = a - b;
 			
 			if (diff == difference_price):
-				print(int(cost(m)))
+				print(int(cost(half)))
 				aux = 0
 			else:
 				if ( diff > difference_price):
-					start = m
+					start = half
 				else:
-					end = m
+					end = half
 			#
 		#
 		newLine = input()
