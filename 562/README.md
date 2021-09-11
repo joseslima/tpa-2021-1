@@ -12,7 +12,7 @@
 Este diretório contém o código fonte gerado para solucionar o problema 00562
 do *Online Judge*. 
 
-A solução desse problema foi baseada na solução do algoritmo da mochila. Foi utilizada programação dinâmica para armazenar na memóriao calculo realizado na função knapsack, evitando recalculos.
+A solução desse problema foi baseada na solução do algoritmo da mochila. Foi utilizada programação dinâmica para armazenar na memória o calculo realizado na função knapsack, evitando recalculos.
 
 O problema recebeu veredito “Accepted”, como mostrado na
 figura abaixo:

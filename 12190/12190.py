@@ -10,14 +10,17 @@ def getTEnergy(price):
 
 	if (price in dp):
 		return dp[price]
+	#
 
 	if (price == 0):
 		return tEnergy
+	#
 
 	for i in range(len(consumptionRange)):
 		tEnergy += min( max(0 , price / prices[i]), consumptionRange[i])
 		price -= prices[i]*consumptionRange[i]
-	
+	#
+
 	tEnergy += max(0, price/prices[3])
 	
 	dp[price] = tEnergy
@@ -31,10 +34,12 @@ def cost(energy):
 
 	if (energy == 0):
 		return price
+	#
 
 	for i in range(len(consumptionRange)):
 		price += min(max(0, energy*prices[i]), prices[i]*consumptionRange[i]) 
 		energy -= consumptionRange[i]
+	#
 
 	price += max(0, energy*prices[3])
 
@@ -51,7 +56,8 @@ def main():
 		
 		if (not together_price or  not difference_price):
 			break
-			
+		#
+
 		tEnergy = getTEnergy(together_price)
 		start = 0
 		end = tEnergy
@@ -68,15 +74,15 @@ def main():
 			
 			diff = a - b;
 			
-			if ( diff > difference_price):
-				start = m
-			
+			if (diff == difference_price):
+				print(int(cost(m)))
+				aux = 0
 			else:
-				if (diff  < difference_price):
-					end = m
+				if ( diff > difference_price):
+					start = m
 				else:
-					print(int(cost(m)))
-					aux = 0
+					end = m
+			#
 		#
 		newLine = input()
 	return 0
